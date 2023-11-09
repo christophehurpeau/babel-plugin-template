@@ -1177,15 +1177,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ansi-styles@npm:^3.2.1":
-  version: 3.2.1
-  resolution: "@types/ansi-styles@npm:3.2.1"
-  dependencies:
-    "@types/color-name": "npm:*"
-  checksum: ed0ce54e707a9debb20f9a2e52a65bf8712a5b2eaafc7e05539fa2ee3597d44c9bbf55e4c331679829e202c22d763b5e087f4f0ab79ae6c8019a517bc128f425
-  languageName: node
-  linkType: hard
-
 "@types/babel__core@npm:^7.1.14":
   version: 7.1.18
   resolution: "@types/babel__core@npm:7.1.18"
@@ -1224,13 +1215,6 @@ __metadata:
   dependencies:
     "@babel/types": "npm:^7.3.0"
   checksum: 39abd9c0f8858efe3fa955f52d24ec8d953582080702cea29fd5592e697ac624e04e81da3c2b2be8f4f1387350e651802b4f1c481a9f64b002d144bd2152142b
-  languageName: node
-  linkType: hard
-
-"@types/color-name@npm:*":
-  version: 1.1.1
-  resolution: "@types/color-name@npm:1.1.1"
-  checksum: 2abeac8d8d833e0622c66f21487cc8b522792abb2eff2e40df0e3e53261728cb65bab590edf24953eb8d8653ec88044dc801d9a4e58c489a0f10c025de522868
   languageName: node
   linkType: hard
 
@@ -1292,10 +1276,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=14.0.0":
-  version: 20.5.1
-  resolution: "@types/node@npm:20.5.1"
-  checksum: b5aeaeb489842081190f8c2c09e923ff7b1b4ee3ecfceba12ba1030ce7750909a1b3c0f5372bd60cbe955e48a9889f416522e8a96697ad7209317752f395e3e5
+"@types/node@npm:*, @types/node@npm:>=18.0.0":
+  version: 20.9.0
+  resolution: "@types/node@npm:20.9.0"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 755d07de735eafda4e20af75ad9d03bdbfddef327d790e9a896142eac7493db5d8501591376e1c8227aa12eeb88e522bc727c6024504842ed40e539e8a466db9
   languageName: node
   linkType: hard
 
@@ -1493,7 +1479,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-styles@npm:^6.0.0, ansi-styles@npm:^6.1.0":
+"ansi-styles@npm:^6.0.0, ansi-styles@npm:^6.1.0, ansi-styles@npm:^6.2.1":
   version: 6.2.1
   resolution: "ansi-styles@npm:6.2.1"
   checksum: 5d1ec38c123984bcedd996eac680d548f31828bd679a66db2bdf11844634dde55fec3efa9c6bb1d89056a5e79c1ac540c4c784d592ea1d25028a92227d2f2d5c
@@ -1692,7 +1678,7 @@ __metadata:
     "@types/jest": "npm:29.5.8"
     eslint: "npm:8.53.0"
     jest: "npm:29.7.0"
-    nightingale-unit-testing: "npm:12.1.4"
+    nightingale-unit-testing: "npm:14.2.1"
   peerDependencies:
     "@babel/core": ^7.0.0
   languageName: unknown
@@ -4773,120 +4759,119 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nightingale-ansi-formatter@npm:12.1.4":
-  version: 12.1.4
-  resolution: "nightingale-ansi-formatter@npm:12.1.4"
+"nightingale-ansi-formatter@npm:14.2.1":
+  version: 14.2.1
+  resolution: "nightingale-ansi-formatter@npm:14.2.1"
   dependencies:
-    "@types/ansi-styles": "npm:^3.2.1"
-    ansi-styles: "npm:^4.0.0"
-    nightingale-formatter: "npm:12.1.4"
-    nightingale-types: "npm:12.1.4"
-  checksum: ce8e7c7849f0b1a3ee27a2ee1c2d20e35697c56b0d287f17b9ed56ccc8fe0c775feb48717ee9fc653c45ebc78b3676c74effd7f1522d12a50aca042e7bf939b8
+    ansi-styles: "npm:^6.2.1"
+    nightingale-formatter: "npm:14.2.1"
+    nightingale-types: "npm:14.2.1"
+  checksum: 6ef1132b05605eae9a60d8fd36e2e0d050771f44bc869e272461ba73fc6d8cf6afca281229b6ca9782b20ef763838b0c1491136a15e573748003ccff2244c9b9
   languageName: node
   linkType: hard
 
-"nightingale-console-output@npm:12.1.4":
-  version: 12.1.4
-  resolution: "nightingale-console-output@npm:12.1.4"
+"nightingale-console-output@npm:14.2.1":
+  version: 14.2.1
+  resolution: "nightingale-console-output@npm:14.2.1"
   dependencies:
-    "@types/node": "npm:>=14.0.0"
-    nightingale-levels: "npm:12.1.4"
-    nightingale-types: "npm:12.1.4"
-  checksum: 6664af47c914385f6facacffcf5ca8a779b8f07891200e113b8748f5b55019ed464a68e3cdc44fdc162ccf315132f250a0307ff38d06d20d104c4f43cc8debdb
+    "@types/node": "npm:>=18.0.0"
+    nightingale-levels: "npm:14.2.1"
+    nightingale-types: "npm:14.2.1"
+  checksum: 2c0c18ca175f1c09e3ac5b09bb7423f9641135775f8c138655c5612780510dc93b11c9a33707c7386a8a819bc1be0d6fda8aea89dc819ece72b766654a21b4aa
   languageName: node
   linkType: hard
 
-"nightingale-console@npm:12.1.4":
-  version: 12.1.4
-  resolution: "nightingale-console@npm:12.1.4"
+"nightingale-console@npm:14.2.1":
+  version: 14.2.1
+  resolution: "nightingale-console@npm:14.2.1"
   dependencies:
-    "@types/node": "npm:>=14.0.0"
-    nightingale-ansi-formatter: "npm:12.1.4"
-    nightingale-console-output: "npm:12.1.4"
-    nightingale-debug: "npm:12.1.4"
-    nightingale-json-formatter: "npm:12.1.4"
-    nightingale-levels: "npm:12.1.4"
-    nightingale-types: "npm:12.1.4"
-  checksum: 5057e9492c4f0581fc9259e4917c4ad60a5a9ea44b6088b8215beda0817a62d847edbaf9c706c66929b06b206732a525c6ca4e4be27bcf74306c0eb6397638cd
+    "@types/node": "npm:>=18.0.0"
+    nightingale-ansi-formatter: "npm:14.2.1"
+    nightingale-console-output: "npm:14.2.1"
+    nightingale-debug: "npm:14.2.1"
+    nightingale-json-formatter: "npm:14.2.1"
+    nightingale-levels: "npm:14.2.1"
+    nightingale-types: "npm:14.2.1"
+  checksum: b75bd6fc2b5bf42b37dcade70f6696969c4f77cf5c74bc57278d90ceebc8623049ae740378405bf719150b6eb1e10d0b61ceaca09e53ed2300cdfebc32f3b847
   languageName: node
   linkType: hard
 
-"nightingale-debug@npm:12.1.4":
-  version: 12.1.4
-  resolution: "nightingale-debug@npm:12.1.4"
+"nightingale-debug@npm:14.2.1":
+  version: 14.2.1
+  resolution: "nightingale-debug@npm:14.2.1"
   dependencies:
-    nightingale-levels: "npm:12.1.4"
-  checksum: 23760da8e33bfb85e8bce93dc1fe36d2cc5fa24c51437ce0424ac03a685462d4dadc88b73e3b4f9229c65277ff22890a442d7504dd538c2f1e6cbff32babde5d
+    nightingale-levels: "npm:14.2.1"
+  checksum: 8eca4035351dbae3c87e0d1960378c795e997a96960ce87e82fdfa67b435915ee76331178a6e37e6ea02afc0e8727e31f7fb107d8757482306c35e151f5e5bf6
   languageName: node
   linkType: hard
 
-"nightingale-formatter@npm:12.1.4":
-  version: 12.1.4
-  resolution: "nightingale-formatter@npm:12.1.4"
+"nightingale-formatter@npm:14.2.1":
+  version: 14.2.1
+  resolution: "nightingale-formatter@npm:14.2.1"
   dependencies:
-    nightingale-levels: "npm:12.1.4"
-    nightingale-types: "npm:12.1.4"
-  checksum: 7c193c80381f32ef0375752c2f32547b0b9974662cf1384045e215c97dab00763c3d992677c1bb01b73182a73bae4667f1358ad358187075e69c9c1ee008f92d
+    nightingale-levels: "npm:14.2.1"
+    nightingale-types: "npm:14.2.1"
+  checksum: 4959e434d9e7cdf6ac5a82f9f5cf2e3a89cf422cb7bc5ea05d4fdf8f2ef04f70cc15f1fd859035592a21cb5a6ffa8901e3290e24a21b5ff7ef252a3e5392b7da
   languageName: node
   linkType: hard
 
-"nightingale-json-formatter@npm:12.1.4":
-  version: 12.1.4
-  resolution: "nightingale-json-formatter@npm:12.1.4"
+"nightingale-json-formatter@npm:14.2.1":
+  version: 14.2.1
+  resolution: "nightingale-json-formatter@npm:14.2.1"
   dependencies:
-    nightingale-formatter: "npm:12.1.4"
-    nightingale-types: "npm:12.1.4"
-  checksum: 133a3e2407b94351606f31af55db554451624aa934ed9aaa14e5609510cfd47764cbe5d0659b02e0926684d17993302988bbd8039710f770cca264e7b4dbd61c
+    nightingale-formatter: "npm:14.2.1"
+    nightingale-types: "npm:14.2.1"
+  checksum: 20816890db2961244d795bb84986f6fd69ece77bff57b68383f805717a62896961eed8f6da6ef02d6c037f3bea49cff28d71b08910e3ed5f13fc8628f8b90383
   languageName: node
   linkType: hard
 
-"nightingale-levels@npm:12.1.4":
-  version: 12.1.4
-  resolution: "nightingale-levels@npm:12.1.4"
-  checksum: 82c23e9c57855c88d0780bca0579d3508e8f54620fa2457f49dc9f48d761039a30ecd9b0f720649797a522638f694fbfc0426b87e254067d44c7101d53ee067b
+"nightingale-levels@npm:14.2.1":
+  version: 14.2.1
+  resolution: "nightingale-levels@npm:14.2.1"
+  checksum: 7b0ae8a2c504e75415d259b6a372534ee4a15d2b404c41f8ce67170fc488428025817598c5aaff098c335bd17dc6a9e2f9b5930c9d5962aeed795521ff67988c
   languageName: node
   linkType: hard
 
-"nightingale-logger@npm:12.1.4":
-  version: 12.1.4
-  resolution: "nightingale-logger@npm:12.1.4"
+"nightingale-logger@npm:14.2.1":
+  version: 14.2.1
+  resolution: "nightingale-logger@npm:14.2.1"
   dependencies:
-    "@types/node": "npm:>=14.0.0"
-    nightingale-levels: "npm:12.1.4"
-    nightingale-types: "npm:12.1.4"
-  checksum: f179893c77fe780a2382e5ba658a664c2f39e22fe7ae7378d2376fcb5aa0066c37b6ca3659e6b2a9c81daeb310d58ffc1334010cb8304ab31a940c92a4cc52a0
+    "@types/node": "npm:>=18.0.0"
+    nightingale-levels: "npm:14.2.1"
+    nightingale-types: "npm:14.2.1"
+  checksum: c73cbef28257e5346f2fdcce02c35db8bd1f5462b7c502a02a3056f67956b62ebad85e239580716cc05b42d1d809479c31cbe44e7f24dd2159166b79db2b53bb
   languageName: node
   linkType: hard
 
-"nightingale-types@npm:12.1.4":
-  version: 12.1.4
-  resolution: "nightingale-types@npm:12.1.4"
+"nightingale-types@npm:14.2.1":
+  version: 14.2.1
+  resolution: "nightingale-types@npm:14.2.1"
   dependencies:
-    nightingale-levels: "npm:12.1.4"
-  checksum: a0ac87c72d513d7163f254665885b11810917e8cca661b8d835ed39c5fc2627b4f30350574f2e1c43d100c04fdf9226ae7ed3bcc6d10299503e13755832f699a
+    nightingale-levels: "npm:14.2.1"
+  checksum: e8a8dacf8d07dba0959e738656169f7bb0a91a9a9d2388c99a4adb580a6e687832ab80ad7db37842aac10e062a85bb7afc81ddd6884a0dd045c8e2c585b3527d
   languageName: node
   linkType: hard
 
-"nightingale-unit-testing@npm:12.1.4":
-  version: 12.1.4
-  resolution: "nightingale-unit-testing@npm:12.1.4"
+"nightingale-unit-testing@npm:14.2.1":
+  version: 14.2.1
+  resolution: "nightingale-unit-testing@npm:14.2.1"
   dependencies:
-    "@types/node": "npm:>=14.0.0"
-    nightingale: "npm:12.1.4"
-    nightingale-console: "npm:12.1.4"
-  checksum: fb5524310843cb300660481df24a2e3b123e99a5962e0966562d1683f70dc1c76d3596b5310738a5fd180a4a0a30008b260cf35e831ea500b5a31f51018d7df2
+    "@types/node": "npm:>=18.0.0"
+    nightingale: "npm:14.2.1"
+    nightingale-console: "npm:14.2.1"
+  checksum: 4760e15bbb77106df81ca5417261fdf5d020a36aa9b09d8b7d639ce67384eb22481885be4a66b989ad56beec24abfca25788bb61e7cce44d55abcf30b14b1810
   languageName: node
   linkType: hard
 
-"nightingale@npm:12.1.4":
-  version: 12.1.4
-  resolution: "nightingale@npm:12.1.4"
+"nightingale@npm:14.2.1":
+  version: 14.2.1
+  resolution: "nightingale@npm:14.2.1"
   dependencies:
-    "@types/node": "npm:>=14.0.0"
-    nightingale-levels: "npm:12.1.4"
-    nightingale-logger: "npm:12.1.4"
-    nightingale-types: "npm:12.1.4"
-  checksum: 832d7eba3b3c7ee5b85ae2f48c50a03df2fb2c935bbb320d29dc41e59fcb8ef5d071b4d0887b0c0ee5118001b09ccd37b2080179c5af21bfc0824dbb7b855827
+    "@types/node": "npm:>=18.0.0"
+    nightingale-levels: "npm:14.2.1"
+    nightingale-logger: "npm:14.2.1"
+    nightingale-types: "npm:14.2.1"
+  checksum: c3d7f86eee84dcc7635ebc9e68817973132eb2c07070d363844dd6b7b940437f6f71d5ea897feffda0a33e5aa4eb7035e8f8b00c34006357a6ba499ffa6934fe
   languageName: node
   linkType: hard
 
