@@ -1,12 +1,11 @@
 {
   "name": "babel-plugin-template",
   "private": true,
-  "keywords": [],
   "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
   "license": "ISC",
   "repository": "https://github.com/christophehurpeau/babel-plugin-template.git",
   "homepage": "https://github.com/christophehurpeau/babel-plugin-template",
-  "type": "commonjs",
+  "type": "module",
   "engines": {
     "node": ">=18.12.0"
   },
@@ -17,10 +16,8 @@
     "./package.json": "./package.json"
   },
   "sideEffects": false,
-  "files": [
-    "lib"
-  ],
   "scripts": {
+    "checks": "node scripts/check-package.js",
     "clean:build": "true",
     "generate:test-coverage": "rm -Rf docs/coverage/ ; NODE_ENV=production jest --coverage --coverageReporters=pob-lcov-reporter --coverageDirectory=docs/coverage/",
     "lint": "yarn run lint:prettier && yarn run lint:eslint",
@@ -28,9 +25,9 @@
     "lint:prettier": "pob-root-prettier --check .",
     "lint:prettier:fix": "pob-root-prettier --write .",
     "postinstall": "pob-root-postinstall",
-    "test": "jest",
-    "test:coverage": "jest  --coverage --coverageReporters=json --coverageReporters=text",
-    "test:watch": "jest --watch"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest  --coverage --coverageReporters=json --coverageReporters=text",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch"
   },
   "prettier": "@pob/root/prettier-config",
   "commitlint": {
@@ -48,6 +45,7 @@
     "@pob/eslint-config": "51.1.2",
     "@pob/root": "8.7.0",
     "@types/jest": "29.5.8",
+    "check-package-dependencies": "7.0.0",
     "eslint": "8.53.0",
     "jest": "29.7.0",
     "nightingale-unit-testing": "14.2.1"
