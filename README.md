@@ -15,7 +15,7 @@ npm install --save babel-plugin-template
 ## Usage
 
 ```js
-import babelPluginTemplate from 'babel-plugin-template';
+import babelPluginTemplate from "babel-plugin-template";
 
 console.log(babelPluginTemplate);
 ```
